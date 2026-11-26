@@ -1,0 +1,1246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Makeover by Pranali Touches · Makeup artist in Mumbai</title>
+<meta name="description" content="Bridal, party and photoshoot makeup in Mumbai by Pranali. Skin prep first, a finish that lasts through the photos, and a trial before the big day.">
+<meta name="theme-color" content="#5B2C83">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Makeover by Pranali Touches">
+<meta property="og:description" content="Bridal, party and photoshoot makeup in Mumbai. Book on WhatsApp.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%235B2C83'/%3E%3Cpath d='M16 52V30a16 16 0 0 1 32 0v22Z' fill='none' stroke='%23fff' stroke-width='3' stroke-linejoin='round'/%3E%3Cpath d='M28 40V29l8-6v17Z' fill='%23E2BF8A'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Playfair+Display:wght@500;600;700&family=Montserrat:wght@300..600&display=swap">
+<style>
+  /* Reset */
+  *, ::before, ::after { box-sizing: border-box; border: 0 solid currentColor; }
+  html { line-height: 1.5; }
+  body, h1, h2, h3, p, ul, ol, dl, dd, figure, blockquote { margin: 0; }
+  ul, ol { list-style: none; padding: 0; }
+  h1, h2, h3 { font-size: inherit; font-weight: inherit; }
+  a { color: inherit; text-decoration: inherit; }
+  img, svg { display: block; max-width: 100%; }
+  button, input, select, textarea { font: inherit; color: inherit; margin: 0; }
+  button { background: none; cursor: pointer; padding: 0; }
+  fieldset { margin: 0; padding: 0; border: 0; min-width: 0; }
+  legend { padding: 0; }
+  table { border-collapse: collapse; }
+  [hidden] { display: none !important; }
+
+  /* Theme: royal purple + champagne gold, soft lavender surfaces. Text on --brand is white (contrast 10:1). */
+  :root {
+    --bg: #FFFFFF; --surface: #F8F5FC; --surface2: #EFE7F7; --ink: #1F1729; --muted: #615873; --line: #E6DCF0;
+    --brand: #5B2C83; --brand-hover: #46206A; --onbrand: #FFFFFF; --accentsoft: #F2EBFA;
+    --gold: #B9894A; --gold-light: #E2BF8A; --star: #B9894A;
+    --deep: #24123A; --danger: #B3261E;
+    color-scheme: light;
+  }
+
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; animation: none !important; } }
+  body { background: var(--bg); color: var(--ink); font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', sans-serif; font-size: 16px; line-height: 1.65; overflow-x: hidden; }
+  @media (min-width: 768px) { body { font-size: 17px; } }
+  body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 50; background: var(--bg); }
+  h1, h2, h3 { text-wrap: balance; overflow-wrap: break-word; }
+  section[id] { scroll-margin-top: calc(4.75rem + env(safe-area-inset-top, 0px)); }
+  @media (min-width: 1024px) { section[id] { scroll-margin-top: calc(6rem + env(safe-area-inset-top, 0px)); } }
+  :focus-visible { outline: 2px solid var(--brand); outline-offset: 3px; }
+  a, button, label, summary { -webkit-tap-highlight-color: rgba(91,44,131,.14); }
+  .menu-btn[aria-expanded="true"] { background: var(--accentsoft); border-color: var(--brand); color: var(--brand); }
+
+  html, body { max-width: 100%; }
+  .wrap { width: 100%; max-width: 76rem; margin-inline: auto;
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  @media (min-width: 640px) { .wrap { padding-left: max(24px, env(safe-area-inset-left, 0px)); padding-right: max(24px, env(safe-area-inset-right, 0px)); } }
+  .section { padding-block: clamp(3rem, 7vw, 5.5rem); }
+  .h2 { font-family: 'Playfair Display', Georgia, serif; font-weight: 600; color: var(--brand); font-size: clamp(1.9rem, 4.8vw, 3.2rem); line-height: 1.15; letter-spacing: -0.01em; }
+  .lead { color: var(--muted); max-width: 38rem; font-weight: 400; font-size: 1.05rem; }
+  .kicker { font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: var(--muted); }
+  .eyebrow-line { display: inline-flex; align-items: center; gap: .75rem; }
+  .eyebrow-line::before, .eyebrow-line::after { content: ""; width: 28px; height: 1px; background: currentColor; opacity: .6; }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: .55rem; min-height: 50px; padding: .8rem 1.6rem;
+    border-radius: 999px; font-weight: 600; font-size: 12.5px; letter-spacing: .12em; text-transform: uppercase; line-height: 1.25;
+    border: 1px solid transparent; cursor: pointer; text-decoration: none; transition: background-color .15s, color .15s, border-color .15s, transform .15s;
+    text-align: center; max-width: 100%; overflow-wrap: anywhere; }
+  .btn svg { flex: none; }
+  .btn:active { transform: translateY(1px); }
+  .btn-sm { min-height: 42px; padding: .55rem 1.25rem; }
+  .btn-accent { background: var(--brand); color: var(--onbrand); }
+  .btn-accent:hover { background: var(--brand-hover); }
+  .btn-ghost { border-color: var(--brand); color: var(--brand); background: transparent; }
+  .btn-ghost:hover { background: var(--brand); color: var(--onbrand); }
+  /* WhatsApp buttons follow the theme; the chat icon keeps them recognisable. */
+  .btn-wa { background: var(--brand); color: var(--onbrand); }
+  .btn-wa:hover { background: var(--brand-hover); }
+  .btn[disabled] { opacity: .55; cursor: not-allowed; }
+
+  /* Button rows: centred by default, full-width stacked buttons on small phones. */
+  .cta-row { display: flex; flex-wrap: wrap; justify-content: center; gap: .75rem; }
+  .cta-row.start { justify-content: flex-start; }
+  @media (max-width: 479px) { .cta-row { flex-direction: column; align-items: stretch; } .cta-row > .btn { width: 100%; } }
+
+  .card { background: var(--bg); border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 1px 2px rgba(31,23,41,.04), 0 12px 32px -16px rgba(31,23,41,.16); }
+
+  /* Tonal image areas: a photo replaces the gradient when a URL is set in CONFIG */
+  .panel { position: relative; overflow: hidden; display: grid; place-items: center; border-radius: 18px;
+    background: radial-gradient(70% 90% at 82% 18%, var(--accentsoft), transparent 70%), linear-gradient(135deg, #ECE1F7, #C9B3E3); }
+  .panel::after, .look-frame { content: ""; position: absolute; inset: 14px; border: 1px solid rgba(255,255,255,.55); border-radius: 10px; pointer-events: none; }
+  .look-frame { display: block; }
+  .banner { border-radius: 18px; }
+  .initials { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(7rem, 24vw, 16rem); line-height: 1; color: var(--brand); opacity: .14; user-select: none; }
+
+  /* Form */
+  .label { display: block; font-weight: 600; font-size: 14px; letter-spacing: .01em; margin-bottom: 6px; }
+  .opt { font-weight: 400; color: var(--muted); }
+  .input { width: 100%; min-height: 50px; padding: 11px 14px; font: inherit; font-size: 16px; color: var(--ink); background: var(--bg);
+    border: 1px solid var(--line); border-radius: 10px; transition: border-color .15s, box-shadow .15s; }
+  textarea.input { min-height: 96px; resize: vertical; }
+  .input::placeholder { color: var(--muted); opacity: .75; }
+  .input:hover { border-color: #C3B5D4; }
+  .input:focus { outline: none; border-color: var(--brand); box-shadow: 0 0 0 3px var(--accentsoft); }
+  .input[aria-invalid="true"] { border-color: var(--danger); }
+  .input:disabled, option:disabled { opacity: .5; }
+  .err { color: var(--danger); font-size: 13px; line-height: 1.4; margin-top: 6px; padding-left: 20px; position: relative; font-weight: 500; }
+  .err::before { content: ""; position: absolute; left: 0; top: 1px; width: 15px; height: 15px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23B3261E' stroke-width='2.2' stroke-linecap='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 7v6M12 16.5v.5'/%3E%3C/svg%3E") center/contain no-repeat; }
+  .summary { background: #FDF0EF; }
+  .summary ul { margin: 8px 0 0; display: grid; gap: 4px; }
+  .summary a { color: var(--danger); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+  .input[aria-invalid="true"]:focus { box-shadow: 0 0 0 3px rgba(179,38,30,.15); }
+  .check[aria-invalid="true"], .check:has(input[aria-invalid="true"]) { border-color: var(--danger); }
+  .hint { color: var(--muted); font-size: 13px; margin-top: 6px; }
+  .check { display: flex; gap: 10px; align-items: center; min-height: 46px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); cursor: pointer; }
+  .check:has(input:checked) { border-color: var(--brand); background: var(--accentsoft); }
+  .check input { width: 18px; height: 18px; accent-color: var(--brand); flex: none; }
+  .step-btn { width: 50px; height: 50px; flex: none; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); font-size: 22px; cursor: pointer; color: var(--ink); }
+  .step-btn:hover { background: var(--surface2); }
+
+  .navlink { color: var(--ink); text-decoration: none; }
+  .navlink:hover { color: var(--brand); }
+  .navcaps { font-size: 12.5px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; }
+
+  /* Header: one compact row; full nav from 1024px, menu button below that */
+  .site-header { top: env(safe-area-inset-top, 0px); background: rgba(255,255,255,.94); backdrop-filter: saturate(1.4) blur(10px); -webkit-backdrop-filter: saturate(1.4) blur(10px); }
+  .header-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 4rem; }
+  .brand-logo { width: 2.6rem; height: 2.6rem; }
+  .brand-name { font-size: 1.15rem; letter-spacing: .24em; }
+  .brand-sub { font-size: 9px; letter-spacing: .3em; }
+  .desktop-nav { display: none; }
+  .menu-btn { display: grid; place-items: center; width: 2.75rem; height: 2.75rem; border: 1px solid var(--line); border-radius: 10px; color: var(--ink); }
+  .mobile-nav .navlink { font-size: 14px; border-bottom: 1px solid var(--line); }
+  @media (min-width: 1024px) {
+    .header-row { min-height: 5rem; }
+    .brand-logo { width: 3rem; height: 3rem; }
+    .brand-name { font-size: 1.35rem; }
+    .desktop-nav { display: flex; align-items: center; gap: 2.25rem; }
+    .menu-btn, .mobile-nav { display: none !important; }
+  }
+
+  /* Star rating: DOM order 5..1 + row-reverse so "checked and everything to its left" fills */
+  .stars { display: flex; flex-direction: row-reverse; justify-content: flex-end; gap: 2px; }
+  .stars input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+  .stars label { cursor: pointer; padding: 4px; color: var(--surface2); line-height: 0; }
+  .stars label svg { width: 38px; height: 38px; fill: currentColor; stroke: var(--muted); stroke-width: 1; stroke-linejoin: round; }
+  .stars label:hover, .stars label:hover ~ label, .stars input:checked ~ label { color: var(--star); }
+  .stars input:focus-visible + label { outline: 2px solid var(--brand); outline-offset: 2px; }
+  @media (max-width: 359px) { .stars label svg { width: 32px; height: 32px; } }
+  select.input { -webkit-appearance: none; appearance: none; padding-right: 44px; cursor: pointer; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%235B2C83' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; background-size: 20px; text-overflow: ellipsis; }
+  select.input:invalid { color: var(--muted); }
+  select.input option { color: var(--ink); }
+  input[type="date"].input { -webkit-appearance: none; appearance: none; min-width: 0; display: block; text-align: left; padding-right: 14px; }
+  input[type="date"].input::-webkit-calendar-picker-indicator { background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%235B2C83' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='5' width='18' height='16' rx='2'/%3E%3Cpath d='M8 3v4M16 3v4M3 10h18'/%3E%3C/svg%3E") center/20px no-repeat; width: 24px; height: 24px; opacity: 1; cursor: pointer; }
+  input[type="date"].input::-webkit-date-and-time-value { text-align: left; }
+  .input:disabled { background: var(--surface); cursor: not-allowed; }
+  .btn:focus-visible, .input:focus-visible { outline-offset: 2px; }
+  .wm { position: absolute; inset: 0; margin: auto; width: 64px; height: 64px; color: rgba(255,255,255,.9); }
+
+  /* Instagram strip */
+  .igrid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 8px; }
+  .tile { position: relative; display: grid; place-items: center; aspect-ratio: 1; overflow: hidden; color: #fff; text-decoration: none; border-radius: 14px; }
+  .tile svg { width: 44px; height: 44px; color: rgba(255,255,255,.9); transition: transform .3s; }
+  .tile span { position: absolute; left: 0; right: 0; bottom: 0; padding: 26px 10px 12px; font-size: 11.5px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; background: linear-gradient(to top, rgba(36,18,58,.6), transparent); }
+  .tile:hover svg { transform: scale(1.08); }
+  @media (min-width: 640px) { .igrid { grid-template-columns: repeat(5, minmax(0,1fr)); gap: 10px; } }
+  @media (max-width: 639px) { .igrid .tile:last-child { grid-column: span 2; aspect-ratio: 2 / 1; } }
+
+  .pcap { position: absolute; left: 0; right: 0; bottom: 0; padding: 40px 18px 18px; text-align: left; color: #fff; font-size: 13px; letter-spacing: .08em; background: linear-gradient(to top, rgba(36,18,58,.62), transparent); }
+  .pcap b { display: block; font-family: 'Playfair Display', Georgia, serif; font-size: 1.4rem; letter-spacing: 0; font-weight: 600; }
+
+  /* Hero */
+  .hero { background: radial-gradient(55% 75% at 88% 0%, rgba(226,191,138,.32), transparent 65%), radial-gradient(45% 60% at 0% 100%, rgba(176,132,224,.30), transparent 70%), linear-gradient(135deg, #6A3A9A 0%, #47236E 55%, #24123A 100%); color: #fff; position: relative; overflow: hidden; }
+  .hero::after { content: ""; position: absolute; inset: 10px; border: 1px solid rgba(255,255,255,.22); border-radius: 14px; pointer-events: none; }
+  @media (min-width: 640px) { .hero::after { inset: 18px; } }
+  .hero-inner { padding-block: 3.5rem 4rem; padding-inline: max(28px, env(safe-area-inset-left, 0px)); }
+  @media (min-width: 640px) { .hero-inner { padding-block: 5rem; } }
+  @media (min-width: 1024px) { .hero-inner { padding-block: 6.5rem; } }
+  .hero .kicker { color: var(--gold-light); }
+  .hero .btn-ghost { border-color: rgba(255,255,255,.85); color: #fff; } .hero .btn-ghost:hover { background: #fff; color: var(--deep); }
+  .hero .btn-accent, .foot .btn-accent { background: #fff; color: var(--deep); }
+  .hero .btn-accent:hover, .foot .btn-accent:hover { background: #EFE6F8; }
+
+  .foot { background: var(--deep); color: #fff; }
+  .foot a { color: #fff; text-decoration: none; } .foot a:hover { text-decoration: underline; }
+  .foot .muted2 { color: rgba(255,255,255,.82); }
+  .foot .btn-ghost { border-color: rgba(255,255,255,.85); color: #fff; } .foot .btn-ghost:hover { background: #fff; color: var(--deep); text-decoration: none; }
+  .foot-inner { padding-top: 2rem; padding-bottom: 6.5rem; }
+  @media (min-width: 1024px) { .foot-inner { padding-bottom: 2.5rem; } }
+  .foot-nav a { display: inline-flex; align-items: center; min-height: 44px; padding-inline: .25rem; }
+
+  .step-number { font-family: 'Playfair Display', Georgia, serif; font-size: 3rem; line-height: 1; font-weight: 600; color: var(--brand); }
+  .step-number::after { content: ""; display: block; width: 32px; height: 2px; margin: 14px auto 0; background: var(--gold); }
+
+  .wa-float { position: fixed; z-index: 30; width: 3.5rem; height: 3.5rem; min-height: 0; padding: 0; border-radius: 999px;
+    right: max(16px, env(safe-area-inset-right, 0px)); bottom: max(16px, env(safe-area-inset-bottom, 0px)); box-shadow: 0 8px 24px rgba(36,18,58,.35); }
+
+  /* Layout and spacing helpers */
+.aspect-\[2\/1\]{aspect-ratio:2/1}
+.sticky{position:sticky}
+.z-40{z-index:40}
+.border-b{border-bottom-width:1px}
+.border-line{border-color:var(--line)}
+.bg-bg{background-color:var(--bg)}
+.flex{display:flex}
+.flex-wrap{flex-wrap:wrap}
+.justify-center{justify-content:center}
+.overflow-hidden{overflow:hidden}
+.items-center{align-items:center}
+.justify-between{justify-content:space-between}
+.gap-3{gap:0.75rem}
+.text-accent{color:var(--brand)}
+.no-underline{text-decoration-line:none}
+.shrink-0{flex-shrink:0}
+.text-left{text-align:left}
+.leading-none{line-height:1}
+.block{display:block}
+.font-bold{font-weight:700}
+.mt-1{margin-top:0.25rem}
+.font-medium{font-weight:500}
+.uppercase{text-transform:uppercase}
+.text-muted{color:var(--muted)}
+.grid{display:grid}
+.border{border-width:1px}
+.border-t{border-top-width:1px}
+.flex-col{flex-direction:column}
+.py-2{padding-block:0.5rem}
+.min-h-\[50px\]{min-height:50px}
+.my-3{margin-block:0.75rem}
+.relative{position:relative}
+.z-10{z-index:10}
+.text-center{text-align:center}
+.mx-auto{margin-inline:auto}
+.mt-5{margin-top:1.25rem}
+.max-w-4xl{max-width:56rem}
+.font-display{font-family:'Playfair Display',Georgia,serif}
+.text-\[clamp\(2\.3rem\,7vw\,4\.6rem\)\]{font-size:clamp(2.3rem,7vw,4.6rem)}
+.font-semibold{font-weight:600}
+.leading-\[1\.1\]{line-height:1.1}
+.mt-6{margin-top:1.5rem}
+.max-w-xl{max-width:36rem}
+.text-white\/90{color:rgb(255 255 255 / .90)}
+.mt-9{margin-top:2.25rem}
+.mt-10{margin-top:2.5rem}
+.mt-12{margin-top:3rem}
+.mt-8{margin-top:2rem}
+.gap-x-8{column-gap:2rem}
+.gap-y-12{row-gap:3rem}
+.bg-surface{background-color:var(--surface)}
+.gap-12{gap:3rem}
+.aspect-\[4\/5\]{aspect-ratio:4/5}
+.w-full{width:100%}
+.max-w-md{max-width:28rem}
+.min-w-0{min-width:0}
+.mt-4{margin-top:1rem}
+.gap-x-10{column-gap:2.5rem}
+.gap-y-6{row-gap:1.5rem}
+.pt-4{padding-top:1rem}
+.text-2xl{font-size:1.5rem;line-height:2rem}
+.text-\[15px\]{font-size:15px}
+.gap-y-10{row-gap:2.5rem}
+.pt-6{padding-top:1.5rem}
+.text-accenttext{color:var(--brand)}
+.mt-3{margin-top:0.75rem}
+.items-start{align-items:flex-start}
+.gap-8{gap:2rem}
+.p-5{padding:1.25rem}
+.mb-6{margin-bottom:1.5rem}
+.rounded-xl{border-radius:.75rem}
+.border-danger{border-color:var(--danger)}
+.p-4{padding:1rem}
+.text-sm{font-size:.875rem;line-height:1.25rem}
+.text-danger{color:var(--danger)}
+.gap-5{gap:1.25rem}
+.gap-2{gap:0.5rem}
+.text-right{text-align:right}
+.mt-7{margin-top:1.75rem}
+.gap-4{gap:1rem}
+.text-3xl{font-size:1.875rem;line-height:2.25rem}
+.gap-x-6{column-gap:1.5rem}
+.gap-y-3{row-gap:0.75rem}
+.rounded-2xl{border-radius:1rem}
+.bg-surface2{background-color:var(--surface2)}
+.p-6{padding:1.5rem}
+.select-all{user-select:all}
+.underline{text-decoration-line:underline}
+.underline-offset-4{text-underline-offset:4px}
+.wrap-anywhere{overflow-wrap:anywhere}
+.gap-10{gap:2.5rem}
+.border-0{border-width:0}
+.p-0{padding:0}
+.gap-x-4{column-gap:1rem}
+.gap-y-1{row-gap:0.25rem}
+.mt-0{margin-top:0}
+.h-24{height:6rem}
+.w-24{width:6rem}
+.space-y-1>*+*{margin-top:.25rem}
+.gap-y-2{row-gap:0.5rem}
+.text-\[13px\]{font-size:13px}
+.tracking-\[\.16em\]{letter-spacing:.16em}
+.tracking-\[\.22em\]{letter-spacing:.22em}
+.tracking-\[\.26em\]{letter-spacing:.26em}
+.text-\[16px\]{font-size:16px}
+.text-\[12\.5px\]{font-size:12.5px}
+.tracking-\[\.18em\]{letter-spacing:.18em}
+.absolute{position:absolute}
+.inset-0{inset:0}
+.h-full{height:100%}
+.object-cover{object-fit:cover}
+.break-words{overflow-wrap:break-word}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}
+.\!items-start{align-items:flex-start!important}
+.\!py-3{padding-block:0.75rem!important}
+.\!mt-1{margin-top:0.25rem!important}
+.\!min-h-\[36px\]{min-height:36px!important}
+.\!px-3{padding-inline:0.75rem!important}
+.\!text-\[13px\]{font-size:13px!important}
+@media (min-width:640px){
+.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.sm\:p-8{padding:2rem}
+.sm\:col-span-2{grid-column:span 2 / span 2}
+.sm\:grid-cols-\[auto_1fr\]{grid-template-columns:auto 1fr}
+.sm\:p-7{padding:1.75rem}
+}
+@media (min-width:768px){
+.md\:aspect-\[21\/8\]{aspect-ratio:21/8}
+.md\:col-span-2{grid-column:span 2 / span 2}
+.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (min-width:1024px){
+.lg\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.lg\:grid-cols-\[\.85fr_1\.15fr\]{grid-template-columns:.85fr 1.15fr}
+.lg\:gap-20{gap:5rem}
+.lg\:max-w-none{max-width:none}
+.lg\:grid-cols-\[1\.35fr_\.65fr\]{grid-template-columns:1.35fr .65fr}
+.lg\:sticky{position:sticky}
+.lg\:grid-cols-\[\.8fr_1\.2fr\]{grid-template-columns:.8fr 1.2fr}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="logo" viewBox="0 0 64 64">
+    <path d="M10 58 V29 a22 22 0 0 1 44 0 V58 Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+    <path d="M15 53 V29 a17 17 0 0 1 34 0 V53" fill="none" stroke="currentColor" stroke-width=".7" opacity=".5"/>
+    <path d="M27.5 38 V27.5 L36.5 21 V38 Z" fill="#D9AE72"/>
+    <rect x="27" y="38" width="10" height="5" fill="currentColor"/>
+    <rect x="26" y="44" width="12" height="11" rx="1.2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+    <path d="M45.5 13 l1 2.8 2.8 1 -2.8 1 -1 2.8 -1 -2.8 -2.8 -1 2.8 -1z" fill="#D9AE72"/>
+    <path d="M10 58 H54" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="chat" viewBox="0 0 24 24">
+    <path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.2-5.2A8.5 8.5 0 1 1 21 11.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+</svg>
+
+<header class="site-header sticky z-40 border-b border-line">
+  <div class="wrap header-row">
+    <a href="#home" class="flex items-center gap-3 text-accent no-underline" data-go aria-label="Makeover by Pranali Touches, home">
+      <svg class="brand-logo shrink-0" aria-hidden="true"><use href="#logo"/></svg>
+      <span class="text-left leading-none"><span class="brand-name block font-display font-semibold uppercase" data-name>Pranali</span><span class="brand-sub mt-1 block font-medium uppercase text-muted">Makeover &middot; Touches</span></span>
+    </a>
+    <nav class="desktop-nav navcaps" aria-label="Main">
+      <a class="navlink" href="#services" data-go>Services</a>
+      <a class="navlink" href="#about" data-go>About</a>
+      <a class="navlink" href="#process" data-go>Process</a>
+      <a class="navlink" href="#feedback" data-go>Feedback</a>
+      <a class="btn btn-accent btn-sm" href="#book" data-go>Book now</a>
+    </nav>
+    <button id="menuBtn" type="button" class="menu-btn" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+      <svg id="menuIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+    </button>
+  </div>
+  <nav id="mobileNav" hidden class="mobile-nav border-t border-line bg-bg" aria-label="Mobile">
+    <div class="wrap navcaps flex flex-col py-2">
+      <a class="navlink flex min-h-[50px] items-center" href="#services" data-go>Services</a>
+      <a class="navlink flex min-h-[50px] items-center" href="#about" data-go>About</a>
+      <a class="navlink flex min-h-[50px] items-center" href="#process" data-go>Process</a>
+      <a class="navlink flex min-h-[50px] items-center" href="#feedback" data-go>Feedback</a>
+      <a class="btn btn-accent my-3" href="#book" data-go>Book appointment</a>
+    </div>
+  </nav>
+</header>
+
+<main id="home">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-inner relative z-10 text-center">
+      <p class="kicker eyebrow-line">Makeup artist in <span data-city>Mumbai</span></p>
+      <h1 class="mx-auto mt-5 max-w-4xl font-display text-[clamp(2.3rem,7vw,4.6rem)] font-semibold leading-[1.1]">Beauty that brings out your unique self</h1>
+      <p class="mx-auto mt-6 max-w-xl text-white/90">Bridal, party and photoshoot makeup. Skin prep first, a finish that lasts through the photos, and a trial before the big day.</p>
+      <div class="cta-row mt-9">
+        <a href="#book" class="btn btn-accent" data-go>Book appointment</a>
+        <a href="#" class="btn btn-ghost" data-wa target="_blank" rel="noopener"><svg width="18" height="18" aria-hidden="true"><use href="#chat"/></svg>Chat on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <div class="wrap">
+      <div class="text-center">
+        <p class="kicker">What I do</p>
+        <h2 class="h2 mt-3">Beauty services</h2>
+        <p class="lead mx-auto mt-5">Every booking is quoted individually, based on the look, the number of people and the venue. You receive the full details on WhatsApp before anything is confirmed.</p>
+      </div>
+      <div id="serviceGrid" class="mt-12 grid gap-x-8 gap-y-12 md:grid-cols-2"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section bg-surface">
+    <div class="wrap grid items-center gap-12 lg:grid-cols-[.85fr_1.15fr] lg:gap-20">
+      <div id="aboutPanel" class="panel mx-auto aspect-[4/5] w-full max-w-md lg:max-w-none" role="img" aria-label="Portrait of the artist">
+        <span class="initials" data-initials aria-hidden="true"></span><span class="pcap"><b data-name>Pranali</b>Makeup artist &middot; <span data-city>Mumbai</span></span>
+      </div>
+      <div class="min-w-0">
+        <p class="kicker">Meet the artist</p>
+        <h2 class="h2 mt-3">About <span data-name>Pranali</span></h2>
+        <p class="lead mt-6">I do bridal, party and photoshoot makeup in <span data-city>Mumbai</span>. My approach is simple: look after the skin, match the tone exactly, and keep the finish light enough that you can still move your face. Most clients tell me they look like themselves, only rested.</p>
+        <p class="lead mt-4">Bring photos of looks you like and tell me what you don't want. I will tell you what suits your skin and the lighting at your event.</p>
+        <ul class="mt-10 grid gap-x-10 gap-y-6 sm:grid-cols-2">
+          <li class="border-t border-line pt-4"><h3 class="font-display text-2xl">Skin first</h3><p class="mt-1 text-[15px] text-muted">A short skin prep before every look, so makeup sits well and lasts.</p></li>
+          <li class="border-t border-line pt-4"><h3 class="font-display text-2xl">Shade matching</h3><p class="mt-1 text-[15px] text-muted">Base matched in daylight, so your face and neck agree.</p></li>
+          <li class="border-t border-line pt-4"><h3 class="font-display text-2xl">Clean kit</h3><p class="mt-1 text-[15px] text-muted">Brushes sanitised between clients, single-use applicators for lips and lashes.</p></li>
+          <li class="border-t border-line pt-4"><h3 class="font-display text-2xl">Touch-up ready</h3><p class="mt-1 text-[15px] text-muted">Bridal bookings include a small touch-up kit for the day.</p></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process" class="section">
+    <div class="wrap">
+      <div class="text-center">
+        <p class="kicker">Simple and clear</p>
+        <h2 class="h2 mt-3">How booking works</h2>
+      </div>
+      <ol class="mt-12 grid gap-x-10 gap-y-10 text-center sm:grid-cols-2 lg:grid-cols-4">
+        <li class="border-t border-line pt-6"><p class="step-number">1</p><h3 class="navcaps mt-4">Send a request</h3><p class="mt-3 text-[15px] text-muted">Fill in the form below. It opens a ready-made WhatsApp message.</p></li>
+        <li class="border-t border-line pt-6"><p class="step-number">2</p><h3 class="navcaps mt-4">Get a quote</h3><p class="mt-3 text-[15px] text-muted">You receive availability and a personalised quote, usually the same day.</p></li>
+        <li class="border-t border-line pt-6"><p class="step-number">3</p><h3 class="navcaps mt-4">Hold your date</h3><p class="mt-3 text-[15px] text-muted">Pay the advance to reserve the slot. Add a trial if you want one.</p></li>
+        <li class="border-t border-line pt-6"><p class="step-number">4</p><h3 class="navcaps mt-4">Makeup day</h3><p class="mt-3 text-[15px] text-muted">Arrive with a clean, moisturised face. I take care of the rest.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- INSTAGRAM -->
+  <section class="section bg-surface text-center">
+    <div class="wrap">
+      <p class="kicker">On Instagram</p>
+      <h2 class="h2 mt-3">Follow along</h2>
+      <p class="lead mx-auto mt-4">Recent work, behind the scenes and bridal looks. Follow <a href="#" data-ig target="_blank" rel="noopener" class="text-accenttext underline underline-offset-4 wrap-anywhere">@<span data-ig-handle-bare></span></a></p>
+      <div class="igrid mt-8"><a href="#" data-ig target="_blank" rel="noopener" class="tile" style="background:linear-gradient(150deg,#EADFF5,#9F80C6)" aria-label="Bridal glow on Instagram"><svg aria-hidden="true"><use href="#logo"/></svg><span>Bridal glow</span></a><a href="#" data-ig target="_blank" rel="noopener" class="tile" style="background:linear-gradient(150deg,#F2E4F1,#B585B2)" aria-label="Party glam on Instagram"><svg aria-hidden="true"><use href="#logo"/></svg><span>Party glam</span></a><a href="#" data-ig target="_blank" rel="noopener" class="tile" style="background:linear-gradient(150deg,#E4DDF4,#8B76B8)" aria-label="Soft natural on Instagram"><svg aria-hidden="true"><use href="#logo"/></svg><span>Soft natural</span></a><a href="#" data-ig target="_blank" rel="noopener" class="tile" style="background:linear-gradient(150deg,#ECDFEC,#7F5A93)" aria-label="Shoot ready on Instagram"><svg aria-hidden="true"><use href="#logo"/></svg><span>Shoot ready</span></a><a href="#" data-ig target="_blank" rel="noopener" class="tile" style="background:linear-gradient(150deg,#EEE3F5,#A48BC4)" aria-label="Behind the scenes on Instagram"><svg aria-hidden="true"><use href="#logo"/></svg><span>Behind the scenes</span></a></div>
+      <div class="cta-row mt-8"><a href="#" class="btn btn-accent" data-ig target="_blank" rel="noopener">Follow on Instagram</a></div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section id="book" class="section">
+    <div class="wrap">
+      <div class="text-center">
+        <p class="kicker">Request a date</p>
+        <h2 class="h2 mt-3">Book an appointment</h2>
+        <p class="lead mx-auto mt-4">This sends a request, it does not confirm a booking. Your date is held once I reply and the advance is paid.</p>
+      </div>
+
+      <div class="mt-10 grid items-start gap-8 lg:grid-cols-[1.35fr_.65fr]">
+        <div class="card min-w-0 p-5 sm:p-8">
+          <form id="bookingForm" novalidate autocomplete="on">
+            <div id="errorSummary" class="summary mb-6 rounded-xl border border-danger p-4 text-sm text-danger" role="alert" tabindex="-1" hidden></div>
+
+            <div class="grid gap-5 sm:grid-cols-2">
+              <div class="min-w-0">
+                <label class="label" for="f-name">Full name</label>
+                <input class="input" id="f-name" name="name" type="text" autocomplete="name" maxlength="60" placeholder="Priya Sharma" required aria-describedby="e-name">
+                <p class="err" id="e-name" hidden></p>
+              </div>
+              <div class="min-w-0">
+                <label class="label" for="f-phone">Mobile number (WhatsApp)</label>
+                <input class="input" id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="18" placeholder="98765 43210" required aria-describedby="h-phone e-phone">
+                <p class="hint" id="h-phone">10-digit Indian mobile number. +91 is optional.</p>
+                <p class="err" id="e-phone" hidden></p>
+              </div>
+              <div class="min-w-0 sm:col-span-2">
+                <label class="label" for="f-email">Email <span class="opt">(optional)</span></label>
+                <input class="input" id="f-email" name="email" type="email" inputmode="email" autocomplete="email" maxlength="100" placeholder="you@example.com" aria-describedby="e-email">
+                <p class="err" id="e-email" hidden></p>
+              </div>
+
+              <div class="min-w-0 sm:col-span-2">
+                <label class="label" for="f-service">Service</label>
+                <select class="input" id="f-service" name="service" required aria-describedby="e-service"></select>
+                <p class="err" id="e-service" hidden></p>
+              </div>
+
+              <div class="min-w-0">
+                <label class="label" for="f-date">Date</label>
+                <input class="input" id="f-date" name="date" type="date" required aria-describedby="e-date">
+                <p class="err" id="e-date" hidden></p>
+              </div>
+              <div class="min-w-0">
+                <label class="label" for="f-time">Start time</label>
+                <select class="input" id="f-time" name="time" required aria-describedby="h-time e-time"></select>
+                <p class="hint" id="h-time" hidden></p>
+                <p class="err" id="e-time" hidden></p>
+              </div>
+
+              <div class="min-w-0">
+                <label class="label" for="f-people">People needing makeup</label>
+                <div class="flex items-center gap-2">
+                  <button class="step-btn" type="button" id="peopleMinus" aria-label="One less person">−</button>
+                  <input class="input text-center" id="f-people" name="people" type="number" inputmode="numeric" min="1" max="15" step="1" value="1" required aria-describedby="e-people" style="max-width:96px">
+                  <button class="step-btn" type="button" id="peoplePlus" aria-label="One more person">+</button>
+                </div>
+                <p class="err" id="e-people" hidden></p>
+              </div>
+
+              <div id="addressWrap" class="min-w-0 sm:col-span-2">
+                <label class="label" for="f-address">Venue address</label>
+                <textarea class="input" id="f-address" name="address" rows="2" maxlength="200" autocomplete="street-address" placeholder="Hall or house name, area, city" aria-describedby="h-address e-address"></textarea>
+                <p class="hint" id="h-address">Travel charges depend on distance and are shared with the quote.</p>
+                <p class="err" id="e-address" hidden></p>
+              </div>
+
+              <div class="min-w-0 sm:col-span-2">
+                <label class="label" for="f-notes">Anything I should know? <span class="opt">(optional)</span></label>
+                <textarea class="input" id="f-notes" name="notes" rows="3" maxlength="300" placeholder="Skin type, allergies, outfit colour, look you have in mind" aria-describedby="c-notes e-notes"></textarea>
+                <p class="hint text-right" id="c-notes">0 / 300</p>
+                <p class="err" id="e-notes" hidden></p>
+              </div>
+
+              <div class="min-w-0 sm:col-span-2">
+                <label class="check !items-start !py-3">
+                  <input type="checkbox" id="f-consent" name="consent" required aria-describedby="e-consent" class="!mt-1">
+                  <span class="text-[15px]">I understand this is a request. The date is confirmed once I get a reply and the advance is paid.</span>
+                </label>
+                <p class="err" id="e-consent" hidden></p>
+              </div>
+            </div>
+
+            <div class="cta-row start mt-7">
+              <button class="btn btn-accent" type="submit" id="submitBtn">Review my request</button>
+              <button class="btn btn-ghost" type="reset" id="resetBtn">Clear form</button>
+            </div>
+          </form>
+
+          <!-- Shown after a valid submit -->
+          <div id="bookingResult" hidden tabindex="-1" aria-live="polite">
+            <h3 class="font-display text-3xl">Your request is ready</h3>
+            <p class="lead mt-3">It has not been sent yet. Open WhatsApp to send it to <span data-name>Pranali</span>, then wait for a reply with the quote and availability.</p>
+            <dl id="resultList" class="mt-6 grid gap-x-6 gap-y-3 rounded-2xl border border-line bg-surface2 p-5 text-[15px] sm:grid-cols-[auto_1fr]"></dl>
+            <div class="cta-row start mt-7">
+              <a id="sendWa" class="btn btn-wa" href="#" target="_blank" rel="noopener"><svg width="18" height="18" aria-hidden="true"><use href="#chat"/></svg>Send on WhatsApp</a>
+              <button id="copyReq" type="button" class="btn btn-ghost">Copy details</button>
+              <button id="editReq" type="button" class="btn btn-ghost">Edit details</button>
+            </div>
+            <p id="copyNote" class="hint mt-3" role="status"></p>
+          </div>
+        </div>
+
+        <aside class="card min-w-0 p-6 sm:p-7 lg:sticky" style="top: calc(6.5rem + env(safe-area-inset-top, 0px))">
+          <h3 class="font-display text-3xl">Prefer to talk?</h3>
+          <dl class="mt-5 grid gap-5 text-[15px]">
+            <div>
+              <dt class="font-semibold">WhatsApp and calls</dt>
+              <dd class="mt-1 flex flex-wrap items-center gap-2"><span id="phoneText" class="select-all"></span>
+                <button type="button" class="btn btn-ghost !min-h-[36px] !px-3 !text-[13px]" data-copy-phone>Copy</button></dd>
+              <dd class="mt-3"><a href="#" class="btn btn-wa w-full" data-wa target="_blank" rel="noopener"><svg width="18" height="18" aria-hidden="true"><use href="#chat"/></svg>Chat on WhatsApp</a></dd>
+            </div>
+            <div>
+              <dt class="font-semibold">Instagram</dt>
+              <dd class="mt-1"><a href="#" class="text-accenttext underline underline-offset-4 wrap-anywhere" data-ig target="_blank" rel="noopener"><span data-ig-handle></span></a></dd>
+            </div>
+            <div>
+              <dt class="font-semibold">Email</dt>
+              <dd class="mt-1 wrap-anywhere select-all" id="emailText"></dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEEDBACK -->
+  <section id="feedback" class="section bg-surface">
+    <div class="wrap grid items-start gap-10 lg:grid-cols-[.8fr_1.2fr]">
+      <div class="min-w-0">
+        <p class="kicker">Your feedback</p>
+        <h2 class="h2 mt-3">Had your makeup done? Tell me how it went.</h2>
+        <p class="lead mt-4">Your feedback goes straight to <span data-name>Pranali</span> on WhatsApp. It helps me improve, and with your permission it may be shared as a review.</p>
+      </div>
+
+      <div class="card min-w-0 p-5 sm:p-8">
+        <form id="feedbackForm" novalidate>
+          <div class="grid gap-5">
+            <fieldset class="min-w-0 border-0 p-0" aria-describedby="e-rating">
+              <legend class="label">Your rating</legend>
+              <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
+                <div class="stars" id="stars"></div>
+                <p id="ratingText" class="text-sm text-muted" aria-live="polite">Tap a star</p>
+              </div>
+              <p class="err" id="e-rating" hidden></p>
+            </fieldset>
+
+            <div class="grid gap-5 sm:grid-cols-2">
+              <div class="min-w-0">
+                <label class="label" for="fb-name">Your name</label>
+                <input class="input" id="fb-name" type="text" autocomplete="name" maxlength="60" placeholder="Priya Sharma" required aria-describedby="e-fbname">
+                <p class="err" id="e-fbname" hidden></p>
+              </div>
+              <div class="min-w-0">
+                <label class="label" for="fb-service">Service <span class="opt">(optional)</span></label>
+                <select class="input" id="fb-service"></select>
+              </div>
+            </div>
+
+            <div class="min-w-0">
+              <label class="label" for="fb-comment">Your feedback</label>
+              <textarea class="input" id="fb-comment" rows="4" maxlength="500" placeholder="What did you like? Is there anything I could do better?" required aria-describedby="c-comment e-comment"></textarea>
+              <p class="hint text-right" id="c-comment">0 / 500</p>
+              <p class="err" id="e-comment" hidden></p>
+            </div>
+
+            <label class="check !items-start !py-3">
+              <input type="checkbox" id="fb-share" class="!mt-1">
+              <span class="text-[15px]">You may share my feedback and first name publicly <span class="opt">(optional)</span></span>
+            </label>
+          </div>
+
+          <div class="cta-row start mt-7">
+            <button class="btn btn-accent" type="submit">Review my feedback</button>
+          </div>
+        </form>
+
+        <div id="feedbackResult" hidden tabindex="-1" aria-live="polite">
+          <h3 class="font-display text-3xl">Thank you</h3>
+          <p class="lead mt-3">Your feedback has not been sent yet. Open WhatsApp to send it to <span data-name>Pranali</span>.</p>
+          <dl id="fbList" class="mt-6 grid gap-x-6 gap-y-3 rounded-2xl border border-line bg-surface p-5 text-[15px] sm:grid-cols-[auto_1fr]"></dl>
+          <div class="cta-row start mt-7">
+            <a id="fbSendWa" class="btn btn-wa" href="#" target="_blank" rel="noopener"><svg width="18" height="18" aria-hidden="true"><use href="#chat"/></svg>Send on WhatsApp</a>
+            <button id="fbCopy" type="button" class="btn btn-ghost">Copy feedback</button>
+            <button id="fbEdit" type="button" class="btn btn-ghost">Edit</button>
+          </div>
+          <p id="fbCopyNote" class="hint mt-3" role="status"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot relative mt-0">
+  <svg class="block w-full" viewBox="0 0 1440 90" preserveAspectRatio="none" style="height:70px;margin-top:-1px;background:var(--surface)" aria-hidden="true"><path d="M0 90 V50 C240 0 420 90 720 50 C1020 10 1200 80 1440 30 V90 Z" fill="#6A3A9A" opacity=".5"/><path d="M0 90 V68 C260 20 480 100 760 62 C1040 24 1220 90 1440 52 V90 Z" fill="#24123A"/></svg>
+  <div class="wrap foot-inner text-center">
+    <svg class="mx-auto h-24 w-24" aria-hidden="true"><use href="#logo"/></svg>
+    <p class="mt-4 font-display text-2xl font-semibold uppercase tracking-[.26em]"><span data-name>Pranali</span></p>
+    <p class="muted2 mx-auto mt-1 max-w-md text-[15px]">Makeup artist in <span data-city>Mumbai</span>. Bridal, party and photoshoot.</p>
+    <div class="cta-row mt-7">
+      <a class="btn btn-accent" href="#book" data-go>Book appointment</a>
+      <a class="btn btn-ghost" href="#" data-ig target="_blank" rel="noopener">Instagram</a>
+      <a class="btn btn-ghost" href="#" data-wa target="_blank" rel="noopener"><svg width="18" height="18" aria-hidden="true"><use href="#chat"/></svg>WhatsApp</a>
+    </div>
+    <ul class="muted2 mt-9 space-y-1 text-[15px]">
+      <li><a data-phone-link href="#"><span data-phone></span></a></li>
+      <li class="wrap-anywhere"><a data-email-link href="#"><span data-email></span></a></li>
+      <li class="wrap-anywhere"><a href="#" data-ig target="_blank" rel="noopener"><span data-ig-handle></span></a></li>
+    </ul>
+    <nav class="foot-nav mt-6 flex flex-wrap justify-center gap-x-6 text-[13px] font-medium uppercase tracking-[.16em]" aria-label="Footer">
+      <a href="#services" data-go>Services</a><a href="#about" data-go>About</a><a href="#process" data-go>Process</a><a href="#feedback" data-go>Feedback</a>
+    </nav>
+    <p class="muted2 mt-8 text-sm">&copy; <span id="year"></span> <span data-name>Pranali</span> Makeup Artist &middot; <a href="#home" data-go>Back to top</a></p>
+  </div>
+</footer>
+
+<a href="#" data-wa target="_blank" rel="noopener" aria-label="Chat on WhatsApp" class="btn btn-wa wa-float">
+  <svg width="26" height="26" aria-hidden="true"><use href="#chat"/></svg>
+</a>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ======= EDIT YOUR DETAILS HERE ======= */
+  var CONFIG = {
+    name: 'Pranali',
+    city: 'Mumbai',
+    phoneDisplay: '+91 98196 45520',
+    phoneTel: '+919819645520',
+    whatsapp: '919819645520',          // country code + number, digits only
+    instagram: 'makeoverby_pranalitouches',          // without @
+    email: 'pranali@gmail.com',
+    images: { about: '' },   // optional: full URL (or a path like 'images/about.jpg') of your photo. A service can also take img: 'url'.
+    services: [
+      { id: 'bridal', title: 'Bridal makeup', duration: '3 hours', featured: true,
+        blurb: 'Your wedding-day look, planned with you so nothing on the day is a surprise.',
+        includes: ['Skin prep and shade matching', 'HD or airbrush finish', 'Lashes and contouring', 'Touch-up kit for the day'] },
+      { id: 'engagement', title: 'Engagement and reception', duration: '2 hours',
+        blurb: 'A polished evening look that holds up under flash and long hours.', includes: ['Skin prep', 'Lashes', 'Long-wear finish'] },
+      { id: 'party', title: 'Party, guest and family', duration: '1 to 1.5 hours',
+        blurb: 'Booked per person. Good for sangeet, mehendi, birthdays and dinners.', includes: ['Skin prep', 'Lashes on request', 'Group bookings welcome'] },
+      { id: 'shoot', title: 'Photoshoot and editorial', duration: '2 hours',
+        blurb: 'Camera-ready skin and colour, adjusted for your lights and outfits.', includes: ['Look changes on request', 'On-set touch-ups', 'Moodboard call'] },
+      { id: 'lesson', title: 'Makeup lesson', duration: '90 minutes',
+        blurb: 'One-to-one. Learn your face shape, the right products and one everyday and one evening look.', includes: ['Product guidance', 'Step-by-step practice', 'Written notes'] }
+    ]
+  };
+  /* ======= END OF EDITABLE DETAILS ======= */
+
+  function findOne(selector, root) { return (root || document).querySelector(selector); }
+  function findAll(selector, root) { return Array.prototype.slice.call((root || document).querySelectorAll(selector)); }
+  function escapeHtml(value) {
+    return String(value).replace(/[&<>"']/g, function (character) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[character];
+    });
+  }
+  function padTwo(number) { return String(number).padStart(2, '0'); }
+  var whatsappBase = 'https://wa.me/' + CONFIG.whatsapp;
+  var instagramUrl = 'https://www.instagram.com/' + encodeURIComponent(CONFIG.instagram) + '/';
+
+  /* ---------- Fill in details ---------- */
+  findAll('[data-name]').forEach(function (element) { element.textContent = CONFIG.name; });
+  findAll('[data-city]').forEach(function (element) { element.textContent = CONFIG.city; });
+  findAll('[data-ig]').forEach(function (element) { element.href = instagramUrl; });
+  findAll('[data-ig-handle]').forEach(function (element) { element.textContent = '@' + CONFIG.instagram; });
+  findAll('[data-ig-handle-bare]').forEach(function (element) { element.textContent = CONFIG.instagram; });
+  findAll('[data-wa]').forEach(function (element) {
+    element.href = whatsappBase + '?text=' + encodeURIComponent('Hi ' + CONFIG.name + ', I would like to know more about your makeup services.');
+  });
+  findAll('[data-phone]').forEach(function (element) { element.textContent = CONFIG.phoneDisplay; });
+  findAll('[data-phone-link]').forEach(function (element) { element.href = 'tel:' + CONFIG.phoneTel; });
+  findAll('[data-email]').forEach(function (element) { element.textContent = CONFIG.email; });
+  findAll('[data-email-link]').forEach(function (element) { element.href = 'mailto:' + CONFIG.email; });
+  findOne('#phoneText').textContent = CONFIG.phoneDisplay;
+  findOne('#emailText').textContent = CONFIG.email;
+  findOne('#year').textContent = new Date().getFullYear();
+
+  /* ---------- Navigation ---------- */
+  var menuButton = findOne('#menuBtn');
+  var mobileNav = findOne('#mobileNav');
+  function setMenu(isOpen) {
+    mobileNav.hidden = !isOpen;
+    menuButton.setAttribute('aria-expanded', String(isOpen));
+    menuButton.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+    findOne('#menuIcon').innerHTML = isOpen ? '<path d="M6 6l12 12M18 6L6 18"/>' : '<path d="M4 8h16M4 16h16"/>';
+  }
+  menuButton.addEventListener('click', function () { setMenu(mobileNav.hidden); });
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape' && !mobileNav.hidden) { setMenu(false); menuButton.focus(); }
+  });
+  window.matchMedia('(min-width: 1024px)').addEventListener('change', function (mediaQuery) { if (mediaQuery.matches) setMenu(false); });
+
+  function prefersReducedMotion() { return window.matchMedia('(prefers-reduced-motion: reduce)').matches; }
+  function goTo(sectionId, elementToFocus) {
+    var section = document.getElementById(sectionId);
+    if (!section) return;
+    var reduceMotion = prefersReducedMotion();
+    section.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+    if (elementToFocus) {
+      setTimeout(function () {
+        try { elementToFocus.focus({ preventScroll: true }); } catch (focusError) { /* older browsers */ }
+      }, reduceMotion ? 0 : 450);
+    }
+  }
+  document.addEventListener('click', function (event) {
+    var link = event.target.closest ? event.target.closest('a[data-go]') : null;
+    if (!link) return;
+    var sectionId = (link.getAttribute('href') || '').replace('#', '');
+    if (!sectionId) return;
+    event.preventDefault();
+    setMenu(false);
+    goTo(sectionId);
+  });
+
+  /* ---------- Services ---------- */
+  var TONES = [['#EDE3F7', '#B49AD6', '#5B2C83'], ['#F3E6F1', '#C49BC2'], ['#E6DFF4', '#9D8AC6'], ['#EFE3EC', '#B48BB0'], ['#E9E2F3', '#8F78B4']];
+  var serviceGrid = findOne('#serviceGrid');
+  CONFIG.services.forEach(function (service, serviceIndex) {
+    var tones = service.tones || TONES[serviceIndex % TONES.length];
+    var isFeatured = serviceIndex === 0;
+    var article = document.createElement('article');
+    article.className = 'min-w-0 text-center' + (isFeatured ? ' md:col-span-2' : '');
+    article.innerHTML =
+      '<div class="banner relative overflow-hidden ' + (isFeatured ? 'aspect-[2/1] md:aspect-[21/8]' : 'aspect-[2/1]') + '" style="background:linear-gradient(120deg,' + tones.map(escapeHtml).join(',') + ')" role="img" aria-label="' + escapeHtml(service.title) + '"><span class="look-frame"></span><svg class="wm" aria-hidden="true"><use href="#logo"/></svg></div>' +
+      '<h3 class="mt-7 text-[15px] font-semibold uppercase tracking-[.22em]">' + escapeHtml(service.title) + '</h3>' +
+      '<p class="mx-auto mt-3 max-w-md text-[16px] text-muted">' + escapeHtml(service.blurb) + '</p>' +
+      '<ul class="mx-auto mt-4 max-w-md space-y-1 text-[15px] text-muted">' + service.includes.map(function (item) { return '<li>' + escapeHtml(item) + '</li>'; }).join('') + '</ul>' +
+      '<p class="mt-4 text-[12.5px] font-semibold uppercase tracking-[.18em] text-accenttext">' + escapeHtml(service.duration) + '</p>' +
+      '<div class="mt-5"><button type="button" class="btn btn-ghost" data-book="' + escapeHtml(service.id) + '" aria-label="Book ' + escapeHtml(service.title) + '">Book this</button></div>';
+    if (service.img) {
+      var banner = article.firstChild;
+      var photo = new Image();
+      photo.alt = '';
+      photo.className = 'absolute inset-0 h-full w-full object-cover';
+      photo.onerror = function () { photo.remove(); };
+      photo.src = service.img;
+      banner.insertBefore(photo, banner.firstChild);
+    }
+    serviceGrid.appendChild(article);
+  });
+
+  /* ---------- Booking form ---------- */
+  var bookingForm = findOne('#bookingForm');
+  var resultBox = findOne('#bookingResult');
+  var summaryBox = findOne('#errorSummary');
+  var fields = {
+    name: findOne('#f-name'), phone: findOne('#f-phone'), email: findOne('#f-email'), service: findOne('#f-service'), date: findOne('#f-date'),
+    time: findOne('#f-time'), people: findOne('#f-people'), address: findOne('#f-address'), notes: findOne('#f-notes'), consent: findOne('#f-consent')
+  };
+  var FIELD_ORDER = ['name', 'phone', 'email', 'service', 'date', 'time', 'people', 'address', 'notes', 'consent'];
+  var FIELD_LABELS = { name: 'Full name', phone: 'Mobile number', email: 'Email', service: 'Service', date: 'Date', time: 'Start time', people: 'People', address: 'Venue address', notes: 'Notes', consent: 'Confirmation' };
+  var MIN_NOTICE_MINUTES = 120;
+
+  /* services dropdown */
+  var serviceOptions = '<option value="">Choose a service</option>' +
+    CONFIG.services.map(function (service) { return '<option value="' + escapeHtml(service.id) + '">' + escapeHtml(service.title) + '</option>'; }).join('');
+  fields.service.innerHTML = serviceOptions;
+
+  /* time slots, 5 AM to 7 PM */
+  var SLOTS = [];
+  for (var hour = 5; hour <= 19; hour++) {
+    SLOTS.push({ value: padTwo(hour) + ':00', minutes: hour * 60, label: ((hour % 12) || 12) + ':00 ' + (hour < 12 ? 'AM' : 'PM') });
+  }
+  function findSlot(value) { return SLOTS.filter(function (slot) { return slot.value === value; })[0]; }
+  function findService(serviceId) { return CONFIG.services.filter(function (service) { return service.id === serviceId; })[0]; }
+
+  /* date helpers (all local, no UTC shifting) */
+  function todayIso() {
+    var now = new Date();
+    return now.getFullYear() + '-' + padTwo(now.getMonth() + 1) + '-' + padTwo(now.getDate());
+  }
+  function isoParts(isoDate) { return isoDate.split('-').map(Number); }
+  function addDays(isoDate, days) {
+    var parts = isoParts(isoDate);
+    return new Date(Date.UTC(parts[0], parts[1] - 1, parts[2] + days)).toISOString().slice(0, 10);
+  }
+  function isRealDate(isoDate) {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(isoDate)) return false;
+    var parts = isoParts(isoDate);
+    var date = new Date(Date.UTC(parts[0], parts[1] - 1, parts[2]));
+    return date.getUTCFullYear() === parts[0] && date.getUTCMonth() === parts[1] - 1 && date.getUTCDate() === parts[2];
+  }
+  function formatDate(isoDate) {
+    var parts = isoParts(isoDate);
+    return new Intl.DateTimeFormat('en-IN', { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })
+      .format(new Date(Date.UTC(parts[0], parts[1] - 1, parts[2])));
+  }
+  function minutesNow() { var now = new Date(); return now.getHours() * 60 + now.getMinutes(); }
+  function isSlotTooSoon(slot) { return fields.date.value === todayIso() && slot.minutes < minutesNow() + MIN_NOTICE_MINUTES; }
+  function setDateLimits() {
+    var today = todayIso();
+    fields.date.min = today;
+    fields.date.max = addDays(today, 365);
+  }
+
+  function buildTimeOptions() {
+    var previousValue = fields.time.value;
+    var isToday = fields.date.value === todayIso();
+    var openSlots = 0;
+    fields.time.innerHTML = '<option value="">Choose a time</option>' + SLOTS.map(function (slot) {
+      var unavailable = isSlotTooSoon(slot);
+      if (!unavailable) openSlots++;
+      return '<option value="' + slot.value + '"' + (unavailable ? ' disabled' : '') + '>' + slot.label + '</option>';
+    }).join('');
+    var timeHint = findOne('#h-time');
+    if (isToday) {
+      timeHint.hidden = false;
+      timeHint.textContent = openSlots
+        ? 'Same-day slots need at least 2 hours notice. Message on WhatsApp for urgent bookings.'
+        : 'No slots left today. Pick another date or message on WhatsApp.';
+    } else {
+      timeHint.hidden = true;
+      timeHint.textContent = '';
+    }
+    var previousSlot = findSlot(previousValue);
+    fields.time.value = previousSlot && !isSlotTooSoon(previousSlot) ? previousValue : '';
+  }
+
+  /* phone */
+  function normalizePhone(value) {
+    var digits = String(value).replace(/\D/g, '');
+    if (digits.length === 12 && digits.indexOf('91') === 0) digits = digits.slice(2);
+    else if (digits.length === 11 && digits.charAt(0) === '0') digits = digits.slice(1);
+    return /^[6-9]\d{9}$/.test(digits) ? digits : null;
+  }
+  function formatPhone(digits) { return '+91 ' + digits.slice(0, 5) + ' ' + digits.slice(5); }
+  function cleanSpaces(value) { return value.trim().replace(/\s+/g, ' '); }
+  var NAME_PATTERN = /^[\p{L}][\p{L}\p{M} .'’-]*$/u;
+
+  var validators = {
+    name: function (value) {
+      value = cleanSpaces(value);
+      if (!value) return 'Enter your full name.';
+      if (value.length < 2) return 'Name is too short.';
+      if (value.length > 60) return 'Name can be up to 60 characters.';
+      if (!NAME_PATTERN.test(value)) return 'Use letters only, for example Priya Sharma.';
+      return '';
+    },
+    phone: function (value) {
+      if (!value.trim()) return 'Enter your mobile number.';
+      if (/[A-Za-z]/.test(value)) return 'Mobile number cannot contain letters.';
+      var digits = value.replace(/\D/g, '');
+      if (normalizePhone(value)) return '';
+      if (digits.length < 10) return 'Mobile number is too short. Enter 10 digits, like 98765 43210.';
+      if (digits.length > 10 && !/^(91|0)/.test(digits)) return 'Mobile number is too long. Enter 10 digits, like 98765 43210.';
+      return 'Enter a valid Indian mobile number starting with 6, 7, 8 or 9.';
+    },
+    email: function (value) {
+      value = value.trim();
+      if (!value) return '';
+      if (value.length > 100) return 'Email is too long.';
+      return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(value) ? '' : 'Enter a valid email, like you@example.com.';
+    },
+    service: function (value) { return findService(value) ? '' : 'Choose a service.'; },
+    date: function (value) {
+      if (!value) return 'Choose a date.';
+      if (!isRealDate(value)) return 'Enter a valid date.';
+      if (value < todayIso()) return 'That date has passed. Choose today or later.';
+      if (value > addDays(todayIso(), 365)) return 'Bookings open up to one year ahead.';
+      return '';
+    },
+    time: function (value) {
+      if (!value) return 'Choose a start time.';
+      var slot = findSlot(value);
+      if (!slot) return 'Choose a time from the list.';
+      if (isSlotTooSoon(slot)) return 'That time is too soon. Choose a later slot or another date.';
+      return '';
+    },
+    people: function (value) {
+      if (String(value).trim() === '') return 'Enter how many people need makeup.';
+      var count = Number(value);
+      if (!Number.isInteger(count)) return 'Enter a whole number.';
+      if (count < 1 || count > 15) return 'Enter a number from 1 to 15. For bigger groups, message on WhatsApp.';
+      return '';
+    },
+    address: function (value) {
+      value = value.trim();
+      if (!value) return 'Enter the venue address.';
+      if (value.length < 10) return 'Add more detail, such as hall name, area and city.';
+      if (value.length > 200) return 'Address can be up to 200 characters.';
+      return '';
+    },
+    notes: function (value) { return value.length > 300 ? 'Notes can be up to 300 characters.' : ''; },
+    consent: function () { return fields.consent.checked ? '' : 'Tick this box to continue.'; }
+  };
+
+  function setError(fieldKey, message) {
+    var errorElement = findOne('#e-' + fieldKey);
+    errorElement.textContent = message;
+    errorElement.hidden = !message;
+    fields[fieldKey].setAttribute('aria-invalid', message ? 'true' : 'false');
+  }
+  function checkField(fieldKey) {
+    var field = fields[fieldKey];
+    var message = validators[fieldKey](field.type === 'checkbox' ? '' : field.value);
+    setError(fieldKey, message);
+    return message;
+  }
+
+  FIELD_ORDER.forEach(function (fieldKey) {
+    var field = fields[fieldKey];
+    field.addEventListener('blur', function () { if (fieldKey !== 'consent') checkField(fieldKey); });
+    field.addEventListener('input', function () { if (field.getAttribute('aria-invalid') === 'true') checkField(fieldKey); });
+    field.addEventListener('change', function () { if (field.getAttribute('aria-invalid') === 'true') checkField(fieldKey); });
+  });
+
+  /* input hygiene */
+  fields.phone.addEventListener('input', function () {
+    var cleaned = fields.phone.value.replace(/[^\d+\s-]/g, '');
+    if (cleaned !== fields.phone.value) fields.phone.value = cleaned;
+  });
+  fields.notes.addEventListener('input', function () { findOne('#c-notes').textContent = fields.notes.value.length + ' / 300'; });
+  fields.date.addEventListener('change', function () {
+    buildTimeOptions();
+    if (fields.time.getAttribute('aria-invalid') === 'true') checkField('time');
+  });
+
+  /* people stepper */
+  function stepPeople(change) {
+    var count = parseInt(fields.people.value, 10);
+    if (isNaN(count)) count = 1;
+    fields.people.value = Math.max(1, Math.min(15, count + change));
+    setError('people', '');
+  }
+  findOne('#peopleMinus').addEventListener('click', function () { stepPeople(-1); });
+  findOne('#peoplePlus').addEventListener('click', function () { stepPeople(1); });
+
+  /* "Book this" buttons */
+  document.addEventListener('click', function (event) {
+    var bookButton = event.target.closest ? event.target.closest('[data-book]') : null;
+    if (!bookButton) return;
+    showForm();
+    fields.service.value = bookButton.getAttribute('data-book');
+    setError('service', '');
+    goTo('book', fields.date);
+  });
+
+  /* build request */
+  function collectRequest() {
+    return {
+      name: cleanSpaces(fields.name.value),
+      phone: formatPhone(normalizePhone(fields.phone.value)),
+      email: fields.email.value.trim(),
+      service: findService(fields.service.value).title,
+      date: formatDate(fields.date.value),
+      time: findSlot(fields.time.value).label,
+      people: String(parseInt(fields.people.value, 10)),
+      where: 'At my venue: ' + cleanSpaces(fields.address.value),
+      notes: fields.notes.value.trim()
+    };
+  }
+  function requestMessage(request) {
+    var lines = ['Hi ' + CONFIG.name + ', I would like to book a makeup appointment.', '', 'Name: ' + request.name, 'Phone: ' + request.phone];
+    if (request.email) lines.push('Email: ' + request.email);
+    lines.push('Service: ' + request.service, 'Date: ' + request.date, 'Time: ' + request.time, 'People: ' + request.people, 'Location: ' + request.where);
+    if (request.notes) lines.push('Notes: ' + request.notes);
+    lines.push('', 'Please share availability and a quote. Thank you!');
+    return lines.join('\n');
+  }
+
+  function fillDetailsList(listElement, rows) {
+    listElement.innerHTML = '';
+    rows.forEach(function (row) {
+      var term = document.createElement('dt');
+      var detail = document.createElement('dd');
+      term.className = 'font-semibold';
+      detail.className = 'min-w-0 break-words text-muted';
+      term.textContent = row[0];
+      detail.textContent = row[1];
+      listElement.appendChild(term);
+      listElement.appendChild(detail);
+    });
+  }
+
+  var lastRequestMessage = '';
+  function showResult(request) {
+    fillDetailsList(findOne('#resultList'), [
+      ['Name', request.name], ['Phone', request.phone], ['Email', request.email || 'Not given'], ['Service', request.service],
+      ['Date', request.date], ['Time', request.time], ['People', request.people], ['Location', request.where], ['Notes', request.notes || 'None']
+    ]);
+    lastRequestMessage = requestMessage(request);
+    findOne('#sendWa').href = whatsappBase + '?text=' + encodeURIComponent(lastRequestMessage);
+    findOne('#copyNote').textContent = '';
+    bookingForm.hidden = true;
+    resultBox.hidden = false;
+    goTo('book', resultBox);
+  }
+  function showForm() { bookingForm.hidden = false; resultBox.hidden = true; }
+
+  function focusField(field, delay) {
+    field.scrollIntoView({ block: 'center', behavior: prefersReducedMotion() ? 'auto' : 'smooth' });
+    setTimeout(function () {
+      try { field.focus({ preventScroll: true }); } catch (focusError) { /* older browsers */ }
+    }, delay);
+  }
+
+  bookingForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+    var invalidKeys = FIELD_ORDER.filter(function (fieldKey) { return checkField(fieldKey); });
+    if (invalidKeys.length) {
+      summaryBox.hidden = false;
+      summaryBox.innerHTML = '<strong>Please fix ' + invalidKeys.length + (invalidKeys.length === 1 ? ' field' : ' fields') + ' before sending:</strong><ul>' +
+        invalidKeys.map(function (fieldKey) {
+          return '<li><a href="#" data-fix="' + fieldKey + '">' + escapeHtml(FIELD_LABELS[fieldKey]) + '</a>: ' + escapeHtml(findOne('#e-' + fieldKey).textContent) + '</li>';
+        }).join('') + '</ul>';
+      summaryBox.focus();
+      focusField(fields[invalidKeys[0]], 350);
+      return;
+    }
+    summaryBox.hidden = true;
+    showResult(collectRequest());
+  });
+
+  summaryBox.addEventListener('click', function (event) {
+    var fixLink = event.target.closest ? event.target.closest('[data-fix]') : null;
+    if (!fixLink) return;
+    event.preventDefault();
+    focusField(fields[fixLink.getAttribute('data-fix')], 300);
+  });
+
+  bookingForm.addEventListener('reset', function () {
+    setTimeout(function () {
+      FIELD_ORDER.forEach(function (fieldKey) { setError(fieldKey, ''); });
+      summaryBox.hidden = true;
+      fields.people.value = 1;
+      findOne('#c-notes').textContent = '0 / 300';
+      setDateLimits();
+      buildTimeOptions();
+    }, 0);
+  });
+
+  findOne('#editReq').addEventListener('click', function () { showForm(); goTo('book', fields.name); });
+
+  /* copy helpers */
+  function copyText(text, noteElement) {
+    function finished(copied) {
+      if (noteElement) noteElement.textContent = copied ? 'Copied.' : 'Copy is not available here. Select the text and copy it manually.';
+    }
+    function fallbackCopy() {
+      try {
+        var helper = document.createElement('textarea');
+        helper.value = text;
+        helper.setAttribute('readonly', '');
+        helper.style.position = 'fixed';
+        helper.style.opacity = '0';
+        document.body.appendChild(helper);
+        helper.select();
+        var copied = document.execCommand('copy');
+        document.body.removeChild(helper);
+        finished(copied);
+      } catch (copyError) { finished(false); }
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () { finished(true); }, fallbackCopy);
+    } else {
+      fallbackCopy();
+    }
+  }
+  findOne('#copyReq').addEventListener('click', function () { copyText(lastRequestMessage, findOne('#copyNote')); });
+  findOne('[data-copy-phone]').addEventListener('click', function (event) {
+    var copyButton = event.currentTarget;
+    copyText(CONFIG.phoneDisplay, null);
+    copyButton.textContent = 'Copied';
+    setTimeout(function () { copyButton.textContent = 'Copy'; }, 1500);
+  });
+
+  /* ---------- Feedback ---------- */
+  var feedbackForm = findOne('#feedbackForm');
+  var feedbackResult = findOne('#feedbackResult');
+  var feedbackName = findOne('#fb-name');
+  var feedbackComment = findOne('#fb-comment');
+  var feedbackService = findOne('#fb-service');
+  var feedbackShare = findOne('#fb-share');
+  var RATING_WORDS = ['', 'Poor', 'Fair', 'Good', 'Very good', 'Excellent'];
+  var STAR_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>';
+
+  var starsHtml = '';
+  for (var starValue = 5; starValue >= 1; starValue--) {
+    var starLabel = starValue + (starValue === 1 ? ' star' : ' stars');
+    starsHtml += '<input type="radio" name="rating" id="fb-star-' + starValue + '" value="' + starValue + '">' +
+      '<label for="fb-star-' + starValue + '" title="' + starLabel + '"><span class="sr-only">' + starLabel + ' (' + RATING_WORDS[starValue] + ')</span>' + STAR_SVG + '</label>';
+  }
+  findOne('#stars').innerHTML = starsHtml;
+  feedbackService.innerHTML = serviceOptions;
+
+  function selectedRating() {
+    var checkedStar = feedbackForm.querySelector('input[name="rating"]:checked');
+    return checkedStar ? Number(checkedStar.value) : 0;
+  }
+  function setFeedbackError(errorId, field, message) {
+    var errorElement = findOne('#' + errorId);
+    errorElement.textContent = message;
+    errorElement.hidden = !message;
+    if (field) field.setAttribute('aria-invalid', message ? 'true' : 'false');
+    return message;
+  }
+  var feedbackChecks = {
+    rating: function () { return setFeedbackError('e-rating', null, selectedRating() ? '' : 'Choose a star rating.'); },
+    name: function () {
+      var name = cleanSpaces(feedbackName.value);
+      var message = '';
+      if (!name) message = 'Enter your name.';
+      else if (name.length < 2) message = 'Name is too short.';
+      else if (name.length > 60) message = 'Name can be up to 60 characters.';
+      else if (!NAME_PATTERN.test(name)) message = 'Use letters only, for example Priya Sharma.';
+      return setFeedbackError('e-fbname', feedbackName, message);
+    },
+    comment: function () {
+      var comment = feedbackComment.value.trim();
+      var message = '';
+      if (!comment) message = 'Write a few words about your experience.';
+      else if (comment.length < 10) message = 'Add a little more detail (at least 10 characters).';
+      else if (comment.length > 500) message = 'Feedback can be up to 500 characters.';
+      return setFeedbackError('e-comment', feedbackComment, message);
+    }
+  };
+  feedbackName.addEventListener('blur', feedbackChecks.name);
+  feedbackComment.addEventListener('blur', feedbackChecks.comment);
+  feedbackName.addEventListener('input', function () { if (feedbackName.getAttribute('aria-invalid') === 'true') feedbackChecks.name(); });
+  feedbackComment.addEventListener('input', function () {
+    findOne('#c-comment').textContent = feedbackComment.value.length + ' / 500';
+    if (feedbackComment.getAttribute('aria-invalid') === 'true') feedbackChecks.comment();
+  });
+  feedbackForm.addEventListener('change', function (event) {
+    if (event.target.name !== 'rating') return;
+    var rating = selectedRating();
+    findOne('#ratingText').textContent = RATING_WORDS[rating] + ' (' + rating + ' of 5)';
+    feedbackChecks.rating();
+  });
+
+  var lastFeedbackMessage = '';
+  feedbackForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+    var invalidChecks = ['rating', 'name', 'comment'].filter(function (checkName) { return feedbackChecks[checkName](); });
+    if (invalidChecks.length) {
+      var firstInvalid = invalidChecks[0] === 'rating' ? findOne('#fb-star-5') : invalidChecks[0] === 'name' ? feedbackName : feedbackComment;
+      focusField(firstInvalid, 350);
+      return;
+    }
+    var rating = selectedRating();
+    var name = cleanSpaces(feedbackName.value);
+    var comment = feedbackComment.value.trim();
+    var service = findService(feedbackService.value);
+    var mayShare = feedbackShare.checked;
+    lastFeedbackMessage = ['Hi ' + CONFIG.name + ', here is my feedback.', '', 'Rating: ' + rating + ' / 5 (' + RATING_WORDS[rating] + ')']
+      .concat(service ? ['Service: ' + service.title] : [])
+      .concat(['Name: ' + name, 'Feedback: ' + comment, '', mayShare ? 'You may share this publicly.' : 'Please keep this private.'])
+      .join('\n');
+
+    fillDetailsList(findOne('#fbList'), [
+      ['Rating', rating + ' of 5 (' + RATING_WORDS[rating] + ')'], ['Name', name], ['Service', service ? service.title : 'Not specified'],
+      ['Feedback', comment], ['Sharing', mayShare ? 'You may share it publicly' : 'Keep private']
+    ]);
+    findOne('#fbSendWa').href = whatsappBase + '?text=' + encodeURIComponent(lastFeedbackMessage);
+    findOne('#fbCopyNote').textContent = '';
+    feedbackForm.hidden = true;
+    feedbackResult.hidden = false;
+    goTo('feedback', feedbackResult);
+  });
+  findOne('#fbEdit').addEventListener('click', function () { feedbackForm.hidden = false; feedbackResult.hidden = true; goTo('feedback', feedbackName); });
+  findOne('#fbCopy').addEventListener('click', function () { copyText(lastFeedbackMessage, findOne('#fbCopyNote')); });
+
+  /* ---------- Image panels (about) ---------- */
+  var initials = CONFIG.name.split(/\s+/).filter(Boolean).map(function (word) { return word.charAt(0); }).slice(0, 2).join('').toUpperCase();
+  function paintPanel(panelId, imageUrl) {
+    var panel = document.getElementById(panelId);
+    if (!panel) return;
+    var initialsElement = panel.querySelector('[data-initials]');
+    if (initialsElement) initialsElement.textContent = initials;
+    if (!imageUrl) return;
+    var photo = new Image();
+    photo.alt = '';
+    photo.className = 'absolute inset-0 h-full w-full object-cover';
+    photo.onload = function () { if (initialsElement) initialsElement.hidden = true; };
+    photo.onerror = function () { photo.remove(); };
+    photo.src = imageUrl;
+    panel.insertBefore(photo, panel.firstChild);
+  }
+  paintPanel('aboutPanel', CONFIG.images.about);
+
+  /* init */
+  setDateLimits();
+  buildTimeOptions();
+})();
+</script>
+</body>
+</html>
