@@ -129,13 +129,21 @@
   .brand-sub { font-size: 9px; letter-spacing: .3em; }
   .desktop-nav { display: none; }
   .menu-btn { display: grid; place-items: center; width: 2.75rem; height: 2.75rem; border: 1px solid var(--line); border-radius: 10px; color: var(--ink); }
+  /* Mobile menu opens OVER the page (it never pushes content down), with a dimmed backdrop. */
+  .mobile-nav { position: absolute; left: 0; right: 0; top: 100%; z-index: 2;
+    max-height: calc(100dvh - 4rem - env(safe-area-inset-top, 0px)); overflow-y: auto; overscroll-behavior: contain;
+    box-shadow: 0 18px 40px -12px rgba(31,23,41,.35); animation: menu-drop .18s ease-out; }
   .mobile-nav .navlink { font-size: 14px; border-bottom: 1px solid var(--line); }
+  .menu-backdrop { position: fixed; inset: 0; z-index: 35; background: rgba(36,18,58,.45); animation: menu-fade .18s ease-out; }
+  body.menu-open { overflow: hidden; }
+  @keyframes menu-drop { from { opacity: 0; transform: translateY(-8px); } }
+  @keyframes menu-fade { from { opacity: 0; } }
   @media (min-width: 1024px) {
     .header-row { min-height: 5rem; }
     .brand-logo { width: 3rem; height: 3rem; }
     .brand-name { font-size: 1.35rem; }
     .desktop-nav { display: flex; align-items: center; gap: 2.25rem; }
-    .menu-btn, .mobile-nav { display: none !important; }
+    .menu-btn, .mobile-nav, .menu-backdrop { display: none !important; }
   }
 
   /* Star rating: DOM order 5..1 + row-reverse so "checked and everything to its left" fills */
@@ -381,6 +389,7 @@
     </div>
   </nav>
 </header>
+<div id="menuBackdrop" class="menu-backdrop" hidden></div>
 
 <main id="home">
   <!-- HERO -->
@@ -737,13 +746,17 @@
   /* ---------- Navigation ---------- */
   var menuButton = findOne('#menuBtn');
   var mobileNav = findOne('#mobileNav');
+  var menuBackdrop = findOne('#menuBackdrop');
   function setMenu(isOpen) {
     mobileNav.hidden = !isOpen;
+    menuBackdrop.hidden = !isOpen;
+    document.body.classList.toggle('menu-open', isOpen);
     menuButton.setAttribute('aria-expanded', String(isOpen));
     menuButton.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
     findOne('#menuIcon').innerHTML = isOpen ? '<path d="M6 6l12 12M18 6L6 18"/>' : '<path d="M4 8h16M4 16h16"/>';
   }
   menuButton.addEventListener('click', function () { setMenu(mobileNav.hidden); });
+  menuBackdrop.addEventListener('click', function () { setMenu(false); });
   document.addEventListener('keydown', function (event) {
     if (event.key === 'Escape' && !mobileNav.hidden) { setMenu(false); menuButton.focus(); }
   });
